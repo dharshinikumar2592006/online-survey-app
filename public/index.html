@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Survey App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Online Survey</h1>
+        <p>We value your feedback!</p>
+    </header>
+
+    <main class="container">
+        <h2>Survey Questions</h2>
+        <p>Please answer all 5 questions.</p>
+
+        <form id="surveyForm">
+
+            <label for="name">1. What is your name?</label>
+            <input type="text" id="name" required>
+
+            <label for="q1">2. How did you hear about us?</label>
+            <select id="q1" required>
+                <option value="">Select an answer</option>
+                <option>Friends or Family</option>
+                <option>Social Media</option>
+                <option>Google Search</option>
+                <option>Other</option>
+            </select>
+
+            <label for="q2">3. How easy was the website to use?</label>
+            <select id="q2" required>
+                <option value="">Select an answer</option>
+                <option>Very Easy</option>
+                <option>Easy</option>
+                <option>Average</option>
+                <option>Difficult</option>
+            </select>
+
+            <label for="q3">4. How satisfied are you with our service?</label>
+            <select id="q3" required>
+                <option value="">Select an answer</option>
+                <option>Very Satisfied</option>
+                <option>Satisfied</option>
+                <option>Neutral</option>
+                <option>Unsatisfied</option>
+            </select>
+
+            <label for="q4">5. What improvements would you suggest?</label>
+            <textarea id="q4" rows="4" required
+                placeholder="Write your suggestions here..."></textarea>
+
+            <button type="submit">Submit Survey</button>
+
+            <p id="message"></p>
+
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
